@@ -1,0 +1,260 @@
+/* Frontend Mentor Challenge coded by Toni Machado */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary */
+  --orange: hsl(25, 97%, 53%);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --lightGrey: hsl(217, 12%, 63%);
+  --mediumGrey: hsl(216, 12%, 54%);
+  --darkBlue: hsl(214, 21%, 13%);
+  --darkBlue2: hsl(213, 19%, 20%);
+  --veryDarkBlue: hsl(216, 12%, 8%);
+}
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  background-color: var(--veryDarkBlue);
+  color: var(--white);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.seccion {
+  background-color: var(--darkBlue);
+  width: 415px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  padding: 2em;
+  text-align: center;
+}
+.star {
+  background-image: url(../images/icon-star.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--darkBlue2);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 0.4em;
+}
+
+.mobile {
+  background-image: url(../images/illustration-thank-you.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 160px;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  background-color: var(--darkBlue2);
+  font-size: 1em;
+  font-weight: 200;
+  color: var(--orange);
+  margin: auto;
+  padding: 0.4em 1.6em;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  margin-bottom: 2em;
+}
+h1 {
+  font-weight: 600;
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+.weAp {
+  padding: 0 0.7em;
+}
+p {
+  font-weight: 300;
+  color: var(--lightGrey);
+  line-height: 1.6em;
+}
+.contenidoTexto {
+  text-align: left;
+  margin-bottom: 1.5em;
+}
+.punt {
+  gap: 0.8em;
+  display: flex;
+  justify-content: center;
+}
+.punt input {
+  visibility: hidden;
+}
+.punt1,
+.punt2,
+.punt3,
+.punt4,
+.punt5 {
+  position: relative;
+  padding: 1em 2em 2em 1em;
+  display: block;
+}
+.punt1 input[type="radio"] + i,
+.punt2 input[type="radio"] + i,
+.punt3 input[type="radio"] + i,
+.punt4 input[type="radio"] + i,
+.punt5 input[type="radio"] + i {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+i {
+  font-size: 1.4em;
+  font-style: normal;
+  font-weight: 200;
+  padding-top: 0.5em;
+  z-index: 100;
+  color: var(--lightGrey);
+}
+.punt1 input + i,
+.punt2 input + i,
+.punt3 input + i,
+.punt4 input + i,
+.punt5 input + i {
+  background: var(--darkBlue2);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.punt1 input[type="radio"] + i:before {
+  content: "1";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.1em;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  position: absolute;
+  color: var(--white);
+  background: var(--lightGrey);
+  transition: all 0.25s ease;
+  transform: scale(0);
+}
+.punt2 input[type="radio"] + i:before {
+  content: "2";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.1em;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  position: absolute;
+  color: var(--white);
+  background: var(--lightGrey);
+  transition: all 0.25s ease;
+  transform: scale(0);
+}
+.punt3 input[type="radio"] + i:before {
+  content: "3";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.1em;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  position: absolute;
+  color: var(--white);
+  background: var(--lightGrey);
+  transition: all 0.25s ease;
+  transform: scale(0);
+}
+.punt4 input[type="radio"] + i:before {
+  content: "4";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.1em;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  position: absolute;
+  color: var(--white);
+  background: var(--lightGrey);
+  transition: all 0.25s ease;
+  transform: scale(0);
+}
+.punt5 input[type="radio"] + i:before {
+  content: "5";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.1em;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  position: absolute;
+  color: var(--white);
+  background: var(--lightGrey);
+  transition: all 0.25s ease;
+  transform: scale(0);
+}
+.punt1 input[type="radio"] + i:hover,
+.punt2 input[type="radio"] + i:hover,
+.punt3 input[type="radio"] + i:hover,
+.punt4 input[type="radio"] + i:hover,
+.punt5 input[type="radio"] + i:hover {
+  cursor: pointer;
+}
+.punt1 input[type="radio"]:checked + i:before,
+.punt2 input[type="radio"]:checked + i:before,
+.punt3 input[type="radio"]:checked + i:before,
+.punt4 input[type="radio"]:checked + i:before,
+.punt5 input[type="radio"]:checked + i:before {
+  transform: scale(1);
+}
+.punt1:hover input[type="radio"]:not(:checked) + i,
+.punt2:hover input[type="radio"]:not(:checked) + i,
+.punt3:hover input[type="radio"]:not(:checked) + i,
+.punt4:hover input[type="radio"]:not(:checked) + i,
+.punt5:hover input[type="radio"]:not(:checked) + i {
+  background: var(--orange);
+}
+button {
+  background-color: var(--orange);
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.25em;
+  height: 45px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 0.5em;
+}
+button:hover {
+  cursor: pointer;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 50%, 61%);
+}
+@media (max-width: 600px) {
+  .seccion {
+    width: 330px;
+  }
+  .punt {
+    gap: 0;
+  }
+}

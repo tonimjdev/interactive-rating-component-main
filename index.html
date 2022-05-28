@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main class="pageContainer">
+      <section class="seccion" id="ventana1">
+        <div class="star"></div>
+        <br />
+        <article class="contenidoTexto">
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+            offering!
+          </p>
+        </article>
+        <div class="punt">
+          <label class="punt1"> <input type="radio" id="uno" name="puntuacion" value="1" /><i>1</i> </label>
+          <label class="punt2"> <input type="radio" id="dos" name="puntuacion" value="2" /><i>2</i> </label>
+          <label class="punt3"> <input type="radio" id="tres" name="puntuacion" value="3" /><i>3</i> </label>
+          <label class="punt4"> <input type="radio" id="cuatro" name="puntuacion" value="4" /><i>4</i> </label>
+          <label class="punt5"> <input type="radio" id="cinco" name="puntuacion" value="5" /><i>5</i> </label>
+        </div>
+        <button onclick="submit()">Submit</button>
+      </section>
+      <section class="seccion" id="ventana2">
+        <div class="mobile"></div>
+        <h2 id="puntuacion"></h2>
+        <h1>Thank you!</h1>
+        <div class="weAp">
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in
+            touch!
+          </p>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+          <a href="https://github.com/tonimjdev">Toni Machado</a>.
+        </div>
+      </footer>
+      <script>
+        "use strict";
+      </script>
+      <script src="./js/display.js"></script>
+      <script src="./js/main.js"></script>
+    </main>
+  </body>
+</html>
