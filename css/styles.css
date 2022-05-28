@@ -227,6 +227,7 @@ i {
 .punt4:hover input[type="radio"]:not(:checked) + i,
 .punt5:hover input[type="radio"]:not(:checked) + i {
   background: var(--orange);
+  color: var(--white);
 }
 button {
   background-color: var(--orange);
