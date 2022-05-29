@@ -59,7 +59,7 @@ main {
   margin-bottom: 0.5em;
 }
 
-h2 {
+#puntuacion {
   background-color: var(--darkBlue2);
   font-size: 1em;
   font-weight: 200;
@@ -71,7 +71,7 @@ h2 {
   border-radius: 20px;
   margin-bottom: 2em;
 }
-h1 {
+h2 {
   font-weight: 600;
   font-size: 1.8em;
   margin-bottom: 0.5em;
